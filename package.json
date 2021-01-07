@@ -5,7 +5,14 @@
   "main": "index.js",
   "scripts": {
     "webpack": "webpack",
-    "dev": "webpack serve --open"
+    "dev": "webpack serve --open",
+    "publish": "node scripts/ghPages.js",
+    "bump:major": "npm version major",
+    "postbump:major": "npm run publish",
+    "bump:minor": "npm version minor",
+    "postbump:minor": "npm run publish",
+    "bump:patch": "npm version patch",
+    "postbump:patch": "npm run publish"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +30,7 @@
     "@babel/preset-react": "^7.12.10",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.0.1",
+    "gh-pages": "^3.1.0",
     "style-loader": "^2.0.0",
     "webpack": "^5.11.1",
     "webpack-cli": "^4.3.1",
