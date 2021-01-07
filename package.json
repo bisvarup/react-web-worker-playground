@@ -1,12 +1,12 @@
 {
   "name": "webworker-1",
-  "version": "2.0.0",
+  "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "webpack": "webpack",
     "dev": "webpack serve --open",
-    "publish": "node scripts/ghPages.js",
+    "publish": "git push --follow-tags && node scripts/ghPages.js",
     "bump:major": "npm version major",
     "postbump:major": "npm run publish",
     "bump:minor": "npm version minor",
