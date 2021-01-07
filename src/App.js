@@ -1,4 +1,5 @@
 import React from "react";
+import 'antd/dist/antd.css';
 import W_TH from "./WithWebWorker";
 import WO_TH from "./WithoutWebWorker";
 
