@@ -1,12 +1,5 @@
-# React Scaffold Lite
+# Web worker demo
 
-CRA (create react app) is great, but it is way too verbose for a small toy project. So I often find myself using codesandbox to try small react projects. 
+This project demonstrates the power of web worker. We will be computing the nth prime number where n is 40,000. This takes a significant time for any language and most machines.
 
-So I handcrafted a minimal version of scaffold which works great for small toy projects.
-
-
-## Features
-
-1. Local development with complete sourcemap support for better debugging
-2. Dev Server
-3. Modern es6 code support
+There are two situations, in the first case we are doing this work inside a web worker and in the second case we are doing the work inside the main thread. In both the situations open the dev tools to see the logs. Once the prime calculation script starts, the page freezes in the second case, whereas the page stays fine in the firse case with the web worker.
