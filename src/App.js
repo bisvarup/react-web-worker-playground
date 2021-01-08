@@ -2,7 +2,7 @@ import React from "react";
 import "antd/dist/antd.css";
 import { Button, Layout, Typography, Divider } from "antd";
 const { Title } = Typography;
-const { Header, Footer, Sider, Content } = Layout;
+const { Header, Footer, Content } = Layout;
 
 import W_TH from "./WithWebWorker";
 import WO_TH from "./WithoutWebWorker";
